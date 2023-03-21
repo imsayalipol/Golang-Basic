@@ -8,7 +8,7 @@ import (
 
 func main() {
 	fmt.Println("Hello ,world !")
-	a := 10
+	var a = 10
 	fmt.Println("type: ", reflect.TypeOf(a))
 	fmt.Println("size: ", unsafe.Sizeof(a))
 }
