@@ -40,4 +40,18 @@ func main() {
 		fmt.Println("Less than 50")
 	}
 
+	count := 45
+	switch {
+	case count < 10:
+		fmt.Println("Its less than 10")
+		fallthrough
+
+	case count < 50:
+		fmt.Println("Its less than 50")
+		fallthrough
+		// fmt.Println("Its smaller than 50")
+
+	case count < 100:
+		fmt.Println("Its less than 100")
+	}
 }
