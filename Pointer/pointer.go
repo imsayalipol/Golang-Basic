@@ -15,4 +15,7 @@ func main() {
 
 	b = &a
 	fmt.Println("*b = ", *b)
+
+	*b = 15
+	fmt.Println("a =", a)
 }
