@@ -1,5 +1,5 @@
 // This example is similar to interface_simplified_example.go
-// only fdifference is here we are passing a struct variable to a function
+// only difference is here we are passing a struct variable to a function
 // which takes interface variable as a parameter and invoke expected method of struct
 
 package main
