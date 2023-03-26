@@ -35,6 +35,7 @@ func main() {
 	fmt.Println("person 4 info :", person4)
 	fmt.Println("Person 5 info :", person5)
 	fmt.Println("Another way of printing")
-	fmt.Printf("Person 5: %+v\n", person5)
+	fmt.Printf("Person 5: %+v\n", person5) // prints key:value
+	fmt.Printf("Person 5: %v", person5) // prints only values
 
 }
