@@ -12,7 +12,7 @@ func main() {
 
 	interfaceSlice = append(interfaceSlice, 20, "Taylor", 10.10, true, nil)
 	fmt.Println(interfaceSlice)
-
+	fmt.Println()
 	//in case of fmt.Println, the ... notation is used to print the elements of a slice as separate values.
 	fmt.Println(interfaceSlice...)
 
