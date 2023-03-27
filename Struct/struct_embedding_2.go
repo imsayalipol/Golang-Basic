@@ -16,7 +16,6 @@ func (b base) describe() string {
 }
 
 func main() {
-
 	co := container{base: base{num: 33}, name: "Taylor Swift"}
 	po := container{base{44}, "Akon"}
 	do := container{base{num: 66}, "Dua Lipa"}

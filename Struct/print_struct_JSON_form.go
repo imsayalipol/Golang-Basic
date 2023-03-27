@@ -6,12 +6,13 @@ import (
 	"log"
 )
 
+type University struct {
+	Name         string
+	StudentCount int
+	Courses      []string
+}
+
 func main() {
-	type University struct {
-		Name         string
-		StudentCount int
-		Courses      []string
-	}
 
 	var BostonUniversity = University{
 		Name:         "Boston",

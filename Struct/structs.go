@@ -2,14 +2,14 @@ package main
 
 import "fmt"
 
-func main() {
+// declaring a struct
+type Person struct {
+	Name   string
+	Age    int
+	Salary float32
+}
 
-	// declaring a struct
-	type Person struct {
-		Name   string
-		Age    int
-		Salary float32
-	}
+func main() {
 
 	// creating variable of a struct in different ways
 	// way 1:
@@ -36,6 +36,6 @@ func main() {
 	fmt.Println("Person 5 info :", person5)
 	fmt.Println("Another way of printing")
 	fmt.Printf("Person 5: %+v\n", person5) // prints key:value
-	fmt.Printf("Person 5: %v", person5) // prints only values
+	fmt.Printf("Person 5: %v", person5)    // prints only values
 
 }

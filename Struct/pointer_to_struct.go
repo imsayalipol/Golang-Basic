@@ -2,12 +2,13 @@ package main
 
 import "fmt"
 
+type Books struct {
+	Name  string
+	Pages int
+	Price float32
+}
+
 func main() {
-	type Books struct {
-		Name  string
-		Pages int
-		Price float32
-	}
 
 	book := Books{
 		Name:  "The Go Programming Language",
