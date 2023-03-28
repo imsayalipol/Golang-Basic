@@ -16,11 +16,11 @@ func (b base) describe() string {
 }
 
 func main() {
-	co := container{base: base{num: 33}, name: "Taylor Swift"}
-	po := container{base{44}, "Akon"}
-	do := container{base{num: 66}, "Dua Lipa"}
+	co := container{base: base{num: 33}, name: "Taylor Swift"} //way 1
+	po := container{base{44}, "Akon"}                          // way 2
+	do := container{base{num: 66}, "Dua Lipa"}                 //way 3
 
-	fmt.Println("co :", co.num, co.name)      // co can directly access num as base in embedded in container
+	fmt.Println("co :", co.num, co.name)      // co can directly access num as base is embedded in container
 	fmt.Println("po :", po.base.num, po.name) // or we can access num using base
 	fmt.Println("co :", do.num)
 
