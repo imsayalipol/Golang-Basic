@@ -36,7 +36,7 @@ func main() {
 	sayali := person{"Taylor Swift"}
 	sayali.cook()
 	sayali.sleep()
-	check(sayali)
+	check(sayali) // comment this line to run the code
 
 	// sayali is not of type home even if its type kitchen and bedroom
 	// as it can be seen that code dosen't through an error for not implementing sing()

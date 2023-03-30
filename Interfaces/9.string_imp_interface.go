@@ -8,11 +8,11 @@ type Course interface {
 }
 
 func (s student) WebDevelopment() {
-	fmt.Println("I am a Web Developer")
+	fmt.Println(s, "is a Web Developer")
 }
 
 func (s student) EmbeddedDevelopment() {
-	fmt.Println("I am a Embedded Software Developer")
+	fmt.Println(s, "is a Embedded Software Developer")
 }
 
 type student string
@@ -24,4 +24,5 @@ func main() {
 	c = student("John")
 	c.WebDevelopment()
 	c.EmbeddedDevelopment()
+
 }

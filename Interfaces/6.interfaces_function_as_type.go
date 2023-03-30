@@ -32,7 +32,7 @@ type shapes interface {
 }
 
 func main() {
-	var s []shapes //interface variable
+	var s []shapes //interface type slice
 
 	squ := &square{width: 10}
 	s = append(s, squ)
