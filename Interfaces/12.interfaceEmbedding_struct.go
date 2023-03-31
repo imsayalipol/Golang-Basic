@@ -27,16 +27,14 @@ type cat struct {
 func main() {
 
 	p := pet{age: 5}
-	var a animal
-	a = p
 
 	// if interface is named we call it with that name, here 'a'
-	d := dog{a: a, name: "Marcos"}
+	d := dog{a: p, name: "Marcos"}
 	d.a.walks()
 	// d.walks()  this will throw error
 
 	// for anonymous interafce we call it with interface name
-	c := cat{animal: a, name: "Snowy"}
+	c := cat{animal: p, name: "Snowy"}
 	c.walks()
 
 }
