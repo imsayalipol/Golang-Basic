@@ -20,10 +20,12 @@ func main() {
 
 // sending value TO channel
 func send(ch chan int) {
+	fmt.Println("SEND")
 	ch <- 1
 }
 
 func receive(ch chan int) {
+	fmt.Println("REC")
 	val := <-ch
 	fmt.Println("Received Value is :", val)
 }
