@@ -24,5 +24,10 @@ func add(ch chan int, len int) {
 	for i := 0; i < len; i++ {
 		add += <-ch
 	}
+
+	// OR
+	// for val := range ch {
+	// 	sum += val
+
 	fmt.Println("sum :", add)
 }
