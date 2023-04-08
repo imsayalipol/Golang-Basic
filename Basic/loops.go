@@ -11,9 +11,9 @@ func main() {
 	if a := 6; a > 5 {
 		fmt.Println("a is greater than 5")
 	}
-	
+
 	j := 1
-	fmt.Println("for as while without condition and with braek :")
+	fmt.Println("for as while without condition and with break :")
 	for {
 		if j > 10 {
 			break
