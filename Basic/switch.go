@@ -49,9 +49,10 @@ func main() {
 	case count < 50:
 		fmt.Println("Its less than 50")
 		fallthrough
-		// fmt.Println("Its smaller than 50")
+		// fmt.Println("Its smaller than 50")  // Uncommenting this will give syntax error
 
-	case count < 100:
-		fmt.Println("Its less than 100")
+	case count > 100:
+		fmt.Println("Its less than 100") // This sentense is printed as fallthrough allows
+		//execution of the next switch without checking the condition
 	}
 }
