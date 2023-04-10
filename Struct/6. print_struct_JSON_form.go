@@ -1,3 +1,10 @@
+// Serialization is the process of converting an object into a stream
+// of bytes or a string representation that can be transmitted or stored.
+// In this case, the json.Marshal function serializes the BostonUniversity struct
+// into a JSON string representation that can be transmitted over a network or stored in a file.
+// This is a common technique used in distributed systems where applications need to communicate
+// with each other over a network.
+
 package main
 
 import (
