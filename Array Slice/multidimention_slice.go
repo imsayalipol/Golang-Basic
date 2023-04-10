@@ -5,7 +5,7 @@ import "fmt"
 func main() {
 
 	// 2D Slice
-	var twoDSlice = make([][]int, 3) // 3 means a slice of 3 slices
+	var twoDSlice = make([][]int, 3) // 3 means a slice of 3 slices i.e. length is 3
 	fmt.Println("twoDSlice :", twoDSlice)
 
 	twoDSlice[0] = []int{1, 2, 3}
@@ -13,6 +13,7 @@ func main() {
 	twoDSlice[2] = []int{111, 222, 333}
 
 	fmt.Println("twoDSlice is :", twoDSlice)
+	fmt.Println("twoDSlice[1][0] :", twoDSlice[1][0])
 	fmt.Println("Length is :", len(twoDSlice))
 
 	fmt.Println()
@@ -24,8 +25,8 @@ func main() {
 		}
 	}
 	fmt.Println()
-	// 2D Slice of variable length
 
+	// 2D Slice of variable no if elements
 	var sample = make([][]int, 3)
 	sample[0] = []int{1, 2, 3}
 	sample[1] = []int{11, 22}
@@ -37,23 +38,38 @@ func main() {
 	fmt.Println()
 
 	// 3D Slice
-	var threeDSlice = make([][][]int, 2)
+	// var threeDSlice = make([][][]int, 2)
 
-	for i := range threeDSlice {
-		threeDSlice[i] = make([][]int, 3)
-		for j := range sample[i] {
-			threeDSlice[i][j] = make([]int, 3)
-		}
-	}
-	fmt.Println(threeDSlice)
+	// for i := range threeDSlice {
+	// 	threeDSlice[i] = make([][]int, 3)
+	// 	for j := range sample[i] {
+	// 		threeDSlice[i][j] = make([]int, 3)
+	// 	}
+	// }
+	// fmt.Println(threeDSlice)
 
-	fmt.Println("Iterating 3D slice:")
+	// fmt.Println("Iterating 3D slice:")
 
-	for _, first := range threeDSlice {
-		for _, second := range first {
-			for _, third := range second {
-				fmt.Println(third)
-			}
-		}
-	}
+	// for _, first := range threeDSlice {
+	// 	for _, second := range first {
+	// 		for _, third := range second {
+	// 			fmt.Println(third)
+	// 		}
+	// 	}
+	// }
+
+	// OR this is another way :
+	mulArray := [][][] int {
+					{
+						{1,2,3},
+						{4,5,6},
+						{7,8,9},
+					},					
+					{
+						{11,22,33},
+						{44,55,66},
+						{77,88,99},
+					},
+				}
+	fmt.Println(mulArray)
 }

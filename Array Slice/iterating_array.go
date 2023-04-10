@@ -25,7 +25,7 @@ func main() {
 		{500, 300, 400, 800}}
 
 	for _, row := range TwoD_array {
-		//fmt.Println(row)   //this prints only rows
+		// fmt.Println(row)   //this prints only rows
 		for i, v := range row {
 			fmt.Println("index :", i, "value :", v)
 		}
