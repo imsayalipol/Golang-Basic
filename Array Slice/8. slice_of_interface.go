@@ -8,13 +8,22 @@ type Person struct {
 }
 
 func main() {
-	var interfaceSlice []interface{}
-
-	interfaceSlice = append(interfaceSlice, 20, "Taylor", 10.10, true, nil)
-	fmt.Println(interfaceSlice)
+	var interfaceSlice1 []interface{}
+	// setting values of slice
+	interfaceSlice1 = append(interfaceSlice1, 20, "Taylor", 10.10, true, nil)
+	fmt.Println("interfaceSlice1", interfaceSlice1)
 	fmt.Println()
-	//in case of fmt.Println, the ... notation is used to print the elements of a slice as separate values.
-	fmt.Println(interfaceSlice...)
+
+	interfaceSlice2 := make([]interface{}, 3)
+	interfaceSlice2[0] = 20
+	interfaceSlice2[1] = "Taylor"
+	interfaceSlice2[2] = true
+	fmt.Println("interfaceSlice2", interfaceSlice2)
+	fmt.Println()
+
+	//in case of fmt.Println, the ... notation is used to print the elements of a slice 
+	//as separate values.
+	fmt.Println(interfaceSlice1...)
 
 	// slice of struct
 	var structSlice []Person
