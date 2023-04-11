@@ -3,7 +3,7 @@ package main
 import "fmt"
 
 func main() {
-	defer test()
+	defer test() //a defer statement calling the custom function named test()
 	fmt.Println("In main func")
 }
 

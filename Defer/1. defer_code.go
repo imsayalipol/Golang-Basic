@@ -27,8 +27,10 @@ func WriteSomeText(text string) error {
 
 	n, err := file.WriteString("SOme tExt addeD")
 	if err != nil {
+		fmt.Println("Error occured while writing into file\n")
 		return err
 	}
+
 	fmt.Printf("No of bytes written are :%d", n)
 	file.Close()
 	return nil
