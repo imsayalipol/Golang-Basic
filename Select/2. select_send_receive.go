@@ -1,6 +1,9 @@
 package main
 
-import "fmt"
+import (
+	"fmt"
+	// "time"
+)
 
 func main() {
 
@@ -24,6 +27,7 @@ func func1(ch chan string) {
 }
 
 func func2(ch chan string) {
+	// time.Sleep(1 * time.Second)
 	m := <-ch
 	fmt.Println(m)
 }
