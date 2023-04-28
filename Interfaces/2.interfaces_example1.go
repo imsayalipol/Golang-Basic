@@ -12,8 +12,16 @@ type Rectangle struct {
 	height int
 }
 
-func (r Rectangle) Area() int {
+type Square struct {
+	length int
+}
+
+func (r *Rectangle) Area() int {
 	return 2 * r.width * r.height
+}
+
+func (s Square) Area() int {
+	return s.length * s.length
 }
 
 func geometry(s Shape) {
@@ -23,7 +31,10 @@ func geometry(s Shape) {
 }
 
 func main() {
-	r := Rectangle{width: 10, height: 5}
-	geometry(r)
+	r := Rectangle{width: 10, height: 4}
+	geometry(&r) // when receiver is receiving a pointer value we pass it as &r
+
+	s := Square{length: 10}
+	geometry(s) // when receiver is receiving as value we pass it as s
 
 }

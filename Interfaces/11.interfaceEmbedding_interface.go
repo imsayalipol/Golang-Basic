@@ -7,7 +7,7 @@ type animal interface {
 	breath()
 }
 
-// human embed animal interface so any type implementing human interface
+// human interface embeds animal interface so any type implementing human interface
 // has to implement animal interface as well
 type human interface {
 	speak()

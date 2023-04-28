@@ -2,40 +2,40 @@ package main
 
 import "fmt"
 
-//Abstract Interface
+// Abstract Interface
 type iAlpha interface {
-    work()
-    common()
+	work()
+	common()
 }
 
-//Abstract Concrete Type
+// Abstract Concrete Type
 type alpha struct {
-    name string
-    work func()
+	name string
+	work func()
 }
 
 func (a *alpha) common() {
-    fmt.Println("common called")
-    a.work()
+	fmt.Println("common called")
+	a.work()
 }
 
-//Implementing Type
+// Implementing Type
 type beta struct {
-    alpha
+	alpha
 }
 
 func (b *beta) work() {
-    fmt.Println("work called")
-    fmt.Printf("name is %s\n", b.name)
+	fmt.Println("work called")
+	fmt.Printf("name is %s\n", b.name)
 }
 
 func main() {
-    a := alpha{
-        name: "test",
-    }
-    b := &beta{
-        alpha: a,
-    }
-    b.alpha.work = b.work
-    b.common()
+	a := alpha{
+		name: "test",
+	}
+	b := &beta{
+		alpha: a,
+	}
+	b.alpha.work = b.work
+	b.common()
 }
