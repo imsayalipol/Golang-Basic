@@ -17,11 +17,11 @@ func RunnerTwo(age int, wg *sync.WaitGroup) {
 
 func main() {
 
-	var wg sync.WaitGroup
+	var wg sync.WaitGroup //or wg:=new(syn.WaitGroup)
 
 	wg.Add(2)
 
-	go RunnerOne("John", &wg)
+	go RunnerOne("John", &wg) 
 	go RunnerTwo(90, &wg)
 
 	wg.Wait()
