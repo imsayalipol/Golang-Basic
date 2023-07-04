@@ -2,6 +2,11 @@ package main
 
 import "fmt"
 
+type Person struct {
+	name string
+	age  int
+}
+
 func main() {
 
 	arrOfArray := [2][2]int{
@@ -17,10 +22,6 @@ func main() {
 
 	fmt.Println("Array of Slice :", arrOfSlice[1])
 
-	type Person struct {
-		name string
-		age  int
-	}
 	arrOfStruct := [3]Person{
 		{"Taylro Swift", 33},
 		{"Ariana", 30},

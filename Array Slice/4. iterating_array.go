@@ -30,4 +30,10 @@ func main() {
 			fmt.Println("index :", i, "value :", v)
 		}
 	}
+	fmt.Println("Using for loop on TwoD_array :")
+	for r := 0; r < 3; r++ {
+		for c := 0; c < 4; c++ {
+			fmt.Println(TwoD_array[r][c])
+		}
+	}
 }
