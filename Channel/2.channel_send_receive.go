@@ -22,6 +22,7 @@ func main() {
 func send(ch chan int) {
 	fmt.Println("SEND")
 	ch <- 1
+	ch <- 10 // this won't through error
 }
 
 func receive(ch chan int) {
