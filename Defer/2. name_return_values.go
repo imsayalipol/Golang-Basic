@@ -8,7 +8,6 @@ func main() {
 
 	p := add(10, 20)
 	fmt.Println(p)
-
 }
 
 // unnamed return will retun 30 here
