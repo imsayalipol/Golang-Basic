@@ -35,3 +35,6 @@ func WriteSomeText(text string) error {
 	file.Close()
 	return nil
 }
+
+
+// this code is for practice
